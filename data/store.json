@@ -1,0 +1,72 @@
+{
+  "banner": {
+    "enabled": true,
+    "text": "Новая коллекция уже в магазине • Скидки до 25% • Быстрая доставка",
+    "subtext": "TRENDSETTER MARKET — dark streetwear vibe",
+    "ctaText": "Смотреть дроп"
+  },
+  "products": [
+    {
+      "id": "p1",
+      "title": "Night Pulse Puffer",
+      "price": 129000,
+      "oldPrice": 159000,
+      "discount": 19,
+      "category": "Верхняя одежда",
+      "image": "/assets/brand-avatar.png",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inStock": true,
+      "featured": true,
+      "description": "Объемный пуховик в стиле dark street.",
+      "badge": "Хит",
+      "availability": "in_stock"
+    },
+    {
+      "id": "p2",
+      "title": "Chrome Hoodie",
+      "price": 69000,
+      "oldPrice": 0,
+      "discount": 0,
+      "category": "Худи",
+      "image": "/assets/brand-avatar.png",
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "inStock": true,
+      "featured": false,
+      "description": "Плотное худи с минималистичным вайбом.",
+      "badge": "New",
+      "availability": "in_stock"
+    },
+    {
+      "id": "p3",
+      "title": "Ghost Runner",
+      "price": 109000,
+      "oldPrice": 139000,
+      "discount": 22,
+      "category": "Кроссовки",
+      "image": "/assets/brand-avatar.png",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "inStock": false,
+      "featured": true,
+      "description": "Силуэт для вечернего города.",
+      "badge": "Под заказ",
+      "availability": "preorder"
+    }
+  ],
+  "orders": [],
+  "admins": []
+}

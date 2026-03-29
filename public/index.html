@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRENDSETTER MARKET</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div id="app">
+    <header class="hero">
+      <div class="hero__backdrop"></div>
+      <div class="hero__content">
+        <div id="banner" class="top-banner hidden"></div>
+        <div class="brand-row">
+          <img src="/assets/brand-avatar.png" alt="TRENDSETTER MARKET" class="brand-avatar" />
+          <div>
+            <div class="eyebrow">DARK STREETWEAR • MINI APP</div>
+            <h1>TRENDSETTER MARKET</h1>
+            <p class="subtitle">Премиальный dark-vibe магазин внутри Telegram</p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <button class="ghost-btn" id="scrollDrop">Смотреть дроп</button>
+          <button class="ghost-btn alt" id="scrollCart">Корзина</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section-head">
+        <div>
+          <p class="eyebrow">CURATED DROP</p>
+          <h2>Выбери свой стиль</h2>
+        </div>
+        <div class="filters">
+          <input id="searchInput" placeholder="Поиск..." />
+          <select id="stockFilter">
+            <option value="all">Все</option>
+            <option value="instock">В наличии</option>
+            <option value="preorder">Под заказ</option>
+            <option value="featured">Хиты</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="products" class="products"></section>
+
+      <aside id="cartSection" class="cart-panel">
+        <div class="cart-panel__head">
+          <div>
+            <p class="eyebrow">FAST CHECKOUT</p>
+            <h3>Корзина</h3>
+          </div>
+          <div id="cartCount" class="cart-count">0</div>
+        </div>
+
+        <div id="cartItems" class="cart-items"></div>
+
+        <div class="checkout">
+          <div class="summary-row"><span>Итого</span><strong id="cartTotal">0 ₽</strong></div>
+          <button id="checkoutBtn" class="checkout-btn">Оформить заказ</button>
+          <p class="tiny">Размер выбирается перед добавлением в корзину</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <template id="productTemplate">
+    <article class="product-card">
+      <div class="card-image-wrap">
+        <img class="product-image" />
+        <div class="floating-shine"></div>
+        <div class="badges"></div>
+      </div>
+      <div class="product-card__body">
+        <div class="product-topline">
+          <span class="product-category"></span>
+          <span class="product-stock"></span>
+        </div>
+        <h3 class="product-title"></h3>
+        <p class="product-description"></p>
+        <div class="price-row">
+          <strong class="price-now"></strong>
+          <span class="price-old"></span>
+        </div>
+        <div class="sizes"></div>
+        <button class="add-btn">Добавить</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>

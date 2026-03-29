@@ -1,0 +1,21 @@
+{
+  "name": "trendsetter-market-pro",
+  "version": "2.0.0",
+  "description": "TRENDSETTER MARKET Telegram bot + Mini App + Admin Panel",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "server": "node server.js",
+    "bot": "node bot.js",
+    "check-token": "node check-token.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "telegraf": "^4.16.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
